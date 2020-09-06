@@ -47,7 +47,7 @@
 .al-score:focus { outline: none; }
 
 body {
-    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(img/gamble.png);
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(gamble.png);
     background-size: cover;
     background-position: center;
     font-family: Lato;
