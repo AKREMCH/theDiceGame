@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Pig Game</title>
+</head>
+
+<body>
+
+    <!-- Trigger/Open The Modal -->
+    <button class="about" id="myBtn">About The Game</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>
+                <ul>
+                    <li>1. A player looses his ENTIRE score when he rolls two 6 in a row. After that, it's the next
+                        player's turn. (Hint: Always save the previous dice roll in a separate variable)
+                    </li>
+                    <hr>
+                    <li>2. Add an input field to the HTML where players can set the winning score, so that they can
+                        change the predefined score of 100. (Hint: you can read that value with the .value property in
+                        JavaScript. This is a good oportunity to use google to figure this out :)
+                    </li>
+                    <hr>
+                    <li>3. Add another dice to the game, so that there are two dices now. The player looses his current
+                        score when one of them is a 1. (Hint: you will need CSS to position the second dice, so take a
+                        look at the CSS code for the first one.)
+                    </li>
+                    <hr>
+                    <li>the player who get the FINAL SCORE win :) </li>
+                </ul>
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="wrapper clearfix">
+        <div class="player-0-panel active">
+            <div class="player-name" id="name-0">Player 1</div>
+            <div class="player-score" id="score-0">43</div>
+            <div class="player-current-box">
+                <div id="currently-0" class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-0">11</div>
+            </div>
+        </div>
+
+        <div class="player-1-panel">
+            <div class="player-name" id="name-1">Player 2</div>
+            <div class="player-score" id="score-1">72</div>
+            <div class="player-current-box">
+                <div id="currently-0" class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-1">0</div>
+            </div>
+        </div>
+
+        <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+        <button id="btn-1" class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+
+        <button id="btn-2" class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+        <button class="stopMusic">
+            <ion-icon name="pause-outline"></ion-icon>mute music
+        </button>
+        <button style="display: none;" class="playMusic">
+            <ion-icon name="play-outline"></ion-icon>play music
+        </button>
+        <input type="text" placeholder="Final score" class="final-score">
+
+        <img src="dice-5.png" alt="Dice" class="dice">
+    </div>
+
+    <audio id="music" src="/music/happy life.mp3"></audio>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
