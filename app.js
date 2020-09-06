@@ -131,23 +131,7 @@ btn.onclick = function () {
 span.onclick = function () {
       modal.style.display = "none";
 }
-// stop/play music
-/*
-var stopMusic = document.querySelector('.stopMusic')
-var playMusic = document.querySelector('.playMusic')
-stopMusic.onclick = function () {
-      stopMusic.style.display = 'none';
-      playMusic.style.display = 'block';
-      musicPlay.muted = true;
-}
-playMusic.onclick = function () {
-      playMusic.style.display = 'none';
-      stopMusic.style.display = 'block';
 
-      musicPlay.muted = false;
-
-}
-*/
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
       if (event.target == modal) {
