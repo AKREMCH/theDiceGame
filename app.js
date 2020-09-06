@@ -132,6 +132,7 @@ span.onclick = function () {
       modal.style.display = "none";
 }
 // stop/play music
+/*
 var stopMusic = document.querySelector('.stopMusic')
 var playMusic = document.querySelector('.playMusic')
 stopMusic.onclick = function () {
@@ -146,6 +147,7 @@ playMusic.onclick = function () {
       musicPlay.muted = false;
 
 }
+*/
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
       if (event.target == modal) {
